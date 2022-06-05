@@ -11,3 +11,7 @@ test('adds one number gives the same number', () => {
 test('adds 1,2 to equal 3', () => {
   expect(sum('1,2')).toEqual(3);
 });
+
+test('include new line', () => {
+  expect(sum('1\n2,3')).toEqual(6);
+});

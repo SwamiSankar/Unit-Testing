@@ -15,3 +15,7 @@ test('adds 1,2 to equal 3', () => {
 test('include new line', () => {
   expect(sum('1\n2,3')).toEqual(6);
 });
+
+test('not include negatives', () => {
+  expect(sum('-1,2')).toEqual('Negatives Not Allowed');
+});

@@ -9,6 +9,9 @@ const sum = (str) => {
   //Looping for each number in values
   for (let num of values) {
     //Converting the type to number and adding to the value
+    if (num < 0) {
+      return 'Negatives Not Allowed';
+    }
     value = value + Number(num);
   }
 
